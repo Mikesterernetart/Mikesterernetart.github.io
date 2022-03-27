@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>planetSixSpeech</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	</style>
+  </head>
+  <body id="speechThreeBackground">
+  	<!-- body code goes here -->
+  <div class="parent">
+      <div class="h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <img src="images/planet6.1.2.png" alt="ghost like aliens" class="img-fluid image1">
+            <div id="speech1">
+            <img src="images/planetSixOneSpeech.png" alt="planet Six Speech" class="img-fluid image2 text"></div>
+            <div id="speech2">
+            <img src="images/planetSixSpeech.png" alt="planet Six Speech english" class="img-fluid image2 text" >
+            </div>
+          </div>
+      </div>
+        <a href="planetSix.html"><img src="images/backbutton.png" class="float-sm-left image2" alt="back pixel button"></a>
+      </div>
+  	<!-- body code goes here -->
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+    <script>
+        $("#speech2").hide();
+        
+        $("#speech1").hover(function(){
+          $("#speech1").hide();
+            $("#speech2").show();
+        $("#speech2").hover(function(){
+        $("#speech2").hide();
+        $("#speech1").show();
+        });
+        });
+    </script>
+  </body>
+</html>

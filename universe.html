@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Universe</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+      
+      <style> 
+          html {
+              background-color:#A29E9E;
+          }
+          body {
+            animation: fadeInAnimation ease 2s;
+            animation-iteratation-count: 1;
+            animation-fill-mode: forwards;
+          }
+          @keyframes fadeInAnimation {
+              0% {
+                  opacity: 0;
+              }
+              100% {
+                  opacity: 1;
+              }
+          }
+      
+      </style>
+      
+      
+      
+      
+      
+      
+  </head>
+    
+  <body class="container-fluid" id="blackbackground">
+  	<!-- body code goes here -->
+    <div class="parent">
+        <section class="row image1">
+      <div class="col-md-4">
+    <a href="solarSystem.html"><img src="images/galaxy2.png" class="img-fluid" alt="purple pixel art galaxy"></a>
+    </div> 
+    <div class="col-md-4">
+    <a href="solarSystem2.html"><img src="images/galaxy1.png" class="img-fluid" alt="white and pink pixel art galaxy"></a>
+    </div> 
+    <div class="col-md-4">
+    <a href="solarSystem3.html"><img src="images/galaxy3.png" class="img-fluid" alt="greeb pixel art galaxy"></a>
+    </div> 
+    </section>
+      <a href="index.html"><img src="images/backbutton.png" class="float-sm-left image2" alt="back pixel button"></a>
+    </div>
+      
+      
+    <div id="ten-countdown"></div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+<script> 
+    window.onload = function(){
+  
+        (function(){
+  var counter = 5;
+
+  setInterval(function() {
+    counter--;
+    if (counter >= 0) {
+      span = document.getElementById("count");
+      span.innerHTML = counter;
+    }
+    // Display 'counter' wherever you want to display it.
+    if (counter === 0) {
+        alert('out of time');
+        $.get( "index.html" );
+        clearInterval(counter);
+    }
+    
+  }, 1000);
+    
+})();
+  
+}
+      </script>
+  </body>
+</html>

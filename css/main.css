@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    background-color: #000000;
+}
+#blueground {
+    background-color: #030B18;
+}
+html, body{
+    height:100%;
+
+}
+#blackbackground {
+    background-color: #000000;
+}
+#speechOneBackground {
+    background-color: #160323;
+}
+#speechTwoBackground {
+    background-color: #1a272b;
+}
+#speechThreeBackground {
+    background-color: #070b0e;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.image2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.text {
+    margin-left: 10vw;
+}
